@@ -30,6 +30,7 @@ public class Main {
             System.out.println("3.- Eat");
             System.out.println("4.- Clean");
             System.out.println("5.- Attack");
+            System.out.println("6.- Bailar");
             System.out.println("0.- Exit");
             System.out.print("Option: ");
             opcion = sc.nextInt();
@@ -55,6 +56,9 @@ public class Main {
                     int n = sc.nextInt();
                     mascota.attack(dummy, n);
                     System.out.println(dummy);
+                    break;
+                case 6:
+                    mascota.bailar();
                     break;
                 default:
                     System.out.println("Opció no valida");

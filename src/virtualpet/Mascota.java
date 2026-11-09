@@ -70,6 +70,11 @@ public class Mascota { //dades mascota
         }
     }
 
+    public void bailar() {
+        System.out.println(this.nombre + " está bailando un mambo! 💃🕺");
+        this.energy = restar(this.energy, 10);
+    }
+
     // atacar n veces, resta 3 de energy, hygiene y mood a la mascota y al dummy
     // Si la mascota mor es a dir algún atribut arriba a 0, l'atac s'atura al moment.
     public void attack(Mascota dummy, int n) {
